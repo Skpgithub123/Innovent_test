@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First of the few steps to set you up with a Bank Account"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_margin="20dp">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/editTextPannumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_rectangle_bg"
+        android:padding="12dp"
+        android:fontFamily="sans-serif"
+        android:layout_margin="20dp"
+        android:hint="PAN Number"
+        android:textColor="#000000" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_rectangle_bg"
+            android:padding="8dp"
+            android:fontFamily="sans-serif"
+            android:layout_weight="0.5"
+            android:layout_margin="20dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editTextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_rectangle_bg"
+            android:padding="8dp"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif"
+            android:layout_margin="20dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editTextYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_rectangle_bg"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:layout_margin="20dp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Providing PAN and Date of Birth helps us find and fetch your KYC from central registry by the Government of India."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_margin="20dp">
+
+    </TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/buttonNext"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:background="#800080"
+        android:layout_margin="20dp">
+
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I don't have a PAN"
+        android:textColor="#800080"
+        android:textSize="15sp"
+        android:id="@+id/txtdonthavepan"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="20dp">
+
+    </TextView>
+
+</LinearLayout>
